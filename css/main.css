@@ -5,20 +5,20 @@ h1 {
   color: black;
   text-align: center;
   font-family: 'Comfortaa', cursive;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 a:link {
   text-decoration: none;
-  color: black;
+  color: #5D5D5D;
 }
 a:visited {
   text-decoration: none;
-  color: black;
+  color: #5D5D5D;
 }
 a:hover {
   text-decoration: none;
-  color: black;
+  color: #5D5D5D;
 }
 
 p {
@@ -48,12 +48,14 @@ p {
 /* navbar ids and fade animations */
 #about {
   border: 3px solid white;
+  border-radius: 20px;
   background-color: white;
   transition: all 0.2s ease-out;
 }
 
 #about:hover {
   border: 3px solid #5D5D5D;
+  border-radius: 40px;
   color: black;
   transition: all 0.2s ease-in;
 }
@@ -62,12 +64,14 @@ p {
 
 #gallery {
   border: 3px solid white;
+  border-radius: 20px;
   background-color: white;
   transition: all 0.2s ease-out;
 }
 
 #gallery:hover {
   border: 3px solid #5D5D5D;
+  border-radius: 40px;
   color: black;
   transition: all 0.2s ease-in;
 }
@@ -76,37 +80,43 @@ p {
 
 #contact {
   border: 3px solid white;
+  border-radius: 20px;
   background-color: white;
   transition: all 0.2s ease-out;
 }
 
 #contact:hover {
   border: 3px solid #5D5D5D;
+  border-radius: 40px;
   color: black;
   transition: all 0.2s ease-in;
 }
 
+
+#galnav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* body code */
-.grid {
+.gridcolumn {
   display: grid;
-  grid-template-columns: [left] 12.5% [first] 25% [second] 25% [third] 25% [end] 12.5%;
-  margin-left: auto;
-  margin-right: auto; /* spacing between the box and the border of the window */
-  max-width: 900px;
-  padding-top: 20px;
-  width: 90%; /* we want this element to take up exactly this much space */
+  grid-template-columns: 2.5% 30% 2.5% 30% 2.5% 30% 2.5%;
+  gap: 0px 0px;
 }
 
 .navbox {
   border: 3px solid;
   border-color: #5D5D5D;
   background-color: white;
+  background-image: image();
   color: #5D5D5D;
   display: inline-block;
   text-align: center;
   width: auto;
   height: auto;
-  /* float: left; */
   text-align: center;
   font-family: 'Comfortaa', cursive;
   font-size: 30px;
@@ -114,8 +124,35 @@ p {
   padding-right: 35px;
   padding-top: 20px;
   padding-bottom: 20px;
-
   padding: 10px 35px;
+}
+
+.galbox {
+  border: 3px solid;
+  border-color: #5D5D5D;
+  background-color: white;
+  color: #5D5D5D;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 60px;
+  min-width: 300px;
+  width: auto;
+  height: auto;
+  font-size: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  transition: all 0.2s ease-in;
+}
+
+.galbox:hover {
+  border: 3px solid;
+  border-color: #5D5D5D;
+  background-color: white;
+  transition: all 0.2s ease-in;
 }
 
 .hrheader {
@@ -131,8 +168,13 @@ p {
   z-index: -1;
 }
 
+.headergap {
+  background-color: white;
+  height: 40px;
+  width: auto;
+}
 
-@media all and (min-width: 1500px) {
+@media all and (min-width: 1425px) {
   .hrheader {
     left: 50%;
   }
