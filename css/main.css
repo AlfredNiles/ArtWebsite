@@ -12,7 +12,14 @@ h2 {
   color: black;
   text-align: center;
   font-family: 'Comfortaa', cursive;
-  font-size: 30px;
+  font-size: 35px;
+}
+
+h4 {
+  color: #5D5D5D;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 22px;
 }
 
 a:link {
@@ -107,139 +114,6 @@ p {
 }
 
 
-/* digital content */
-#digi1 {
-  background-image: url("../images/gallery/digital/abstract1.png");
-background-position: center center;
-}
-#digi2 {
-  background-image: url("../images/gallery/digital/abstract2.png");
-background-position: center center;
-}
-#digi3 {
-  background-image: url("../images/gallery/digital/abstract3.png");
-background-position: center center;
-}
-#digi4 {
-  background-image: url("../images/gallery/digital/agencygif.mp4");
-background-position: center center;
-}
-#digi5 {
-  background-image: url("../images/gallery/digital/drgslayer.png");
-background-position: center center;
-}
-#digi6 {
-  background-image: url("../images/gallery/digital/eaglehunt.jpg");
-background-position: center center;
-}
-#digi7 {
-  background-image: url("../images/gallery/digital/finalrotoscope.mp4");
-background-position: center center;
-}
-#digi8 {
-  background-image: url("../images/gallery/digital/haunted.png");
-background-position: center center;
-}
-#digi9 {
-  background-image: url("../images/gallery/digital/monochromatic.png");
-background-position: center center;
-}
-#digi10 {
-  background-image: url("../images/gallery/digital/raijin.png");
-background-position: center center;
-}
-#digi11 {
-  background-image: url("../images/gallery/digital/1.jpg");
-background-position: center center;
-}
-#digi12 {
-  background-image: url("../images/gallery/digital/2.png");
-background-position: center center;
-}
-#digi13 {
-  background-image: url("../images/gallery/digital/3.png");
-background-position: center center;
-}
-#digi14 {
-  background-image: url("../images/gallery/digital/4.png");
-background-position: center center;
-}
-#digi15 {
-  background-image: url("../images/gallery/digital/5.png");
-background-position: center center;
-}
-#digi16 {
-  background-image: url("../images/gallery/digital/6.png");
-background-position: center center;
-}
-#digi17 {
-  background-image: url("../images/gallery/digital/7.png");
-background-position: center center;
-}
-#digi18 {
-  background-image: url("../images/gallery/digital/8.png");
-background-position: center center;
-}
-#digi19 {
-  background-image: url("../images/gallery/digital/9.png");
-background-position: center center;
-}
-#digi20 {
-  background-image: url("../images/gallery/digital/10.png");
-background-position: center center;
-}
-#digi21 {
-  background-image: url("../images/gallery/digital/11.png");
-background-position: center center;
-}
-#digi22 {
-  background-image: url("../images/gallery/digital/12.png");
-background-position: center center;
-}
-
-/* physical stuff */
-
-#phys1 {
-  background-image: url("../images/gallery/physical/47.png");
-  background-position: center center;
-}
-#phys2 {
-  background-image: url("../images/gallery/physical/cyber.png");
-  background-position: center center;
-}
-#phys3 {
-  background-image: url("../images/gallery/physical/cyber2.png");
-  background-position: center center;
-}
-#phys4 {
-  background-image: url("../images/gallery/physical/dooku.png");
-  background-position: center center;
-}
-#phys5 {
-  background-image: url("../images/gallery/physical/futurecity.png");
-  background-position: center center;
-}
-#phys6 {
-  background-image: url("../images/gallery/physical/georgemichael.png");
-  background-position: center center;
-}
-#phys7 {
-  background-image: url("../images/gallery/physical/operator.png");
-  background-position: center center;
-}
-#phys8 {
-  background-image: url("../images/gallery/physical/sade.png");
-  background-position: center center;
-}
-#phys9 {
-  background-image: url("../images/gallery/physical/surakorc.png");
-  background-position: center center;
-}
-#phys10 {
-  background-image: url("../images/gallery/physical/woman.png");
-  background-position: center center;
-}
-
 /* body code */
 .grid {
   display: grid;
@@ -316,7 +190,7 @@ background-position: center center;
   font-family: 'Comfortaa', cursive;
   font-size: 60px;
   min-width: 300px;
-  width: auto;
+  max-width: 300px;
   height: auto;
   font-size: 40px;
   padding-left: 35px;
@@ -351,16 +225,6 @@ background-position: center center;
   height: 40px;
   width: auto;
 }
-
-/* .galthumb {
-  border: 3px solid #5D5D5D;
-  background-size: cover;
-  display: inline-block;
-  align-self: center;
-  width: 275px;
-  height: 400px;
-  margin-top: 40px;
-} */
 
 @media all and (min-width: 1425px) {
   .hrheader {
