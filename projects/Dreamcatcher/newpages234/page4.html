@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dreamcatcher</title>
+  <style>
+    body {
+      background-color: rgb(0,0,0);
+      margin: 0;
+    }
+
+    .horiz-scroll {
+      white-space: nowrap;
+
+      /* This changes the reference point for positioning elements inside of this
+         element. So instead of them positioning based on the right edge of the screen
+         the inner elements with "position: absolute;" will position based on the
+         right edge of this element instead */
+      position: relative;
+
+      /* Makes the width of the container the same size as the image inside of it
+         since the image is wider than the screen in most situations. It's calculated
+         based on image-width/image-height. This makes sure the container that the
+         image is in is always the same proportions as the image inside of it to
+         force the horizontal scroll of the page and let us correctly position
+         the fox image to the right of the image instead of the right of the screen */
+      width: 357.08333333vh;
+    }
+
+    img {
+      /* this is a way to remove the extra spacing around images because they want
+         to behave like text with added spacing above and below them from their
+         line-height (the area that keeps acenders and decenders from colliding). */
+      display: block;
+    }
+
+    .background {
+      /* sets the height of the background image to be the height of the screen.
+         vh stands for viewport height and each unit is equal to 1% */
+      height: 100vh;
+    }
+
+    a {
+      display: block;
+
+      /* positions the fox image and the anchor that it's inside of between the
+         buildings to the right of the image */
+      position: absolute;
+      top: 30%;
+      right: 19%;
+      transform: translate(50%, -50%);
+    }
+
+    /* this dynamically sizes the fox image based on the height of the screen,
+       wich is also how we're sizing the background image, so the size of the
+       fox and the size of the background image are linked and will scale at the
+       same rate. */
+    .fox {
+      width: 40vh;
+      height: auto;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="horiz-scroll">
+    <img class="background" src="images/page4/street360.png">
+    <a href="page5.html">
+      <img class="fox" src="images/page4/foxtransparent.png">
+    </a>
+  </div>
+</body>
+</html>

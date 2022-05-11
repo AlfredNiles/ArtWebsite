@@ -1,0 +1,77 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+  <title>Dreamcatcher</title>
+  <style>
+    body {
+      background-color: rgb(0,0,0);
+      text-align: center;
+
+      /* Using CSS background attributes to set the city image as the background
+         for the entire page instead of just the section containing the hover images */
+      background-image: url("images/page2/cityupward.png");
+      background-size: cover;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+    }
+
+    .image-container {
+      /* This makes the element stack vertically, but only take up as much horizontal
+         space as needed so that the hover triggers on the image only and not the
+         empty space around the image */
+      display: table;
+      /* horizonally centers the element on the screen */
+      margin-left: auto;
+      margin-right: auto;
+      /* ensures there's always some empty space on either side of the image so
+         you can trigger the over interaction */
+      max-width: 60%;
+
+      /* This is a way to specifically place an element somewhere on the screen */
+      position: absolute;
+      /* creates a 0px offset of the bottom edge of the element to the bottom
+         edge of the container that it's inside of */
+      bottom: 0;
+      /* creates a 50% of the screen's width offset of the left edge of the
+         element to the left edge of the container that it's inside of */
+      left: 50%;
+      /* horizontally centers the element on the screen by subtracting 50% of
+         the elements width from the left offset */
+      transform: translateX(-50%);
+    }
+
+
+    .image-container img {
+      /* This makes sure that the image never is wider than the container it's in */
+      max-width: 100%;
+      /* This makes sure that the image never is taller than the screen */
+      /* vh stands for viewport height, each unit is equal to 1% */
+      max-height: 90vh;
+    }
+
+    /* This is how we can trigger the hover interaction between the two images */
+    .hovered {
+      display: none;
+    }
+
+    .image-container:hover .default {
+      display: none;
+    }
+
+    .image-container:hover .hovered {
+      display: inline;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="image-container">
+    <a href="page3.html">
+      <img class="default" src="images/page2/secondpage_lookingleft.png" />
+      <img class="hovered" src="images/page2/secondpage_lookingright.png" />
+    </a>
+  </div>
+</body>
+</html>
