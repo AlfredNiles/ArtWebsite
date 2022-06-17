@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  color: white;
+  letter-spacing: 4px;
+  font-size: 52px;
+  margin-top: 175px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  color: white;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin-bottom: 45px;
+}
+
+p {
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  color: white;
+  line-height: 25px;
+}
+
+a {
+  color: yellow;
+}
+
+a:hover {
+  color: white;
+}
+
+a:visited {
+  color: yellow;
+}
+
+.descrip {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px white;
+  padding: 5px;
+}
