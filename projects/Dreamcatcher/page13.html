@@ -1,35 +1,39 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Dreamcatcher</title>
+
+  <!-- This page should redirect back to the start after 550 milliseconds -->
+  <script>
+    setTimeout(function() {
+      window.location.href = "index.html";
+    }, 550);
+  </script>
+
   <style>
     body {
       background-color: rgb(0,0,0);
       text-align: center;
       margin: 0;
       overflow-y: hidden;
-
     }
 
+    .image-container {
+      display: table;
+      margin: 0 auto;
+    }
 
-
-            .image-container {
-              display: table;
-              margin: 0 auto;
-            }
-
-            .image-container img {
-              width: auto;
-              height: 100vh;
-              display: block;
-            }
+    .image-container img {
+      width: auto;
+      height: 100vh;
+      display: block;
     }
   </style>
 </head>
 
 <body>
   <div class="image-container">
-  <a href="index.html"><img src="images/page13/end2.png"></a>
-</div>
-  </body>
+    <a href="index.html"><img src="images/page13/end2.png"></a>
+  </div>
+</body>
 </html>
